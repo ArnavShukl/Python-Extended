@@ -11,4 +11,8 @@ PyE is an extension to the Python programming language, much like C++ is to C. I
 
 ## New Dunder Method
 
-The new dunder method `__parse__(self)` only takes one argument: `self`. Interestingly, it is instantiated with the `Interpreter` object itself. This method is invoked when the `__schar__` attribute, which must always be a string or a list of strings, appears during code execution.
+- The new dunder method `__parse__(self)` only takes one argument: `self`. Interestingly, it is instantiated with the `Interpreter` object itself.
+- This method is invoked when the `__schar__` attribute, which must always be a string or a list of strings, appears during code execution.
+- One can also use labels, for eg. ```dict:{"A": "B"}```, to tell the `Interpreter` to parse the specific type.
+- This new method will change everything, this means that in PyE everthing can be an object even statements. For eg. ```type(type(dict)):class A: pass```
+- This way new language features can be added even as a modules making PyE truely dynamic.
