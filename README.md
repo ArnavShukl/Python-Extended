@@ -16,3 +16,4 @@ PyE is an extension to the Python programming language, much like C++ is to C. I
 - One can also use labels, for eg. ```dict:{"A": "B"}```, to tell the `Interpreter` to parse the specific type.
 - This new method will change everything, this means that in PyE everthing can be an object even statements. For eg. ```type(type(dict)):class A: pass```
 - This way new language features can be added even as a modules making PyE truely dynamic.
+- Apart from this, all languages up till now were static because they had a specific syntax and syntax rules to adhere to but PyE is a revolution. Think of it this way, when every thing in PyE will be an object including statements, consider this use case ```import method from module```. This syntax will work because both `import` and `from` will be objects. This is what gives PyE the title of being Dynamic.
